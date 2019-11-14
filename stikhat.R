@@ -1,7 +1,12 @@
+install.package("stpp")
 library(stpp)
+install.package("maptools")
 library(maptools)
+install.package("plotly")
 library(plotly)
+install.package("scatterplot3d")
 library(scatterplot3d)
+install.package("rgl")
 library(rgl)
 
 #----------------------------------------------------------------------------------------------------------------------
