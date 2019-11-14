@@ -12,7 +12,7 @@ library(rgl)
 crs1=CRS("+proj=utm +zone=18 +ellps=intl +towgs84=307,304,-318,0,0,0,0 +units=m +no_defs " )
 
 #read city boundary
-cali=readShapePoly("C:/Users/ahohl/Google Drive/University of Utah/Teaching/Geographic Data Science Fall 2019/viz/cali_boundary.shp", proj4string=crs1)
+cali=readShapePoly("cali_boundary.shp", proj4string=crs1)
 cali_vec <- cali@polygons[[1]]@Polygons[[1]]@coords
 cali_matrix <- as.matrix(cali_vec)
 cali_matrix_simple <- cali_matrix[seq(1,nrow(cali_matrix),500),]
@@ -47,8 +47,8 @@ diff <- k$Khat-k$Ktheo
 #----------------------------------------------------------------------------------------------------------------------
 
 #set environment
-Sys.setenv("plotly_username"="ahohl")
-Sys.setenv("plotly_api_key"="IQUODNX1cMb3Af9rPHmV")
+Sys.setenv("plotly_username"="")
+Sys.setenv("plotly_api_key"="")
 
 #axes object
 a <- list(
